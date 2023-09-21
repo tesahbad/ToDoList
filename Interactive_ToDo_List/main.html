@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>To Do List</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <main>
+            <h1 id="myHeader">TO DO LIST</h1>
+
+            <input type="button" id="addButton" value="Add" onclick="addTask()" />
+            <input type="text" id="input" placeholder="enter task..." />
+
+            <hr>
+
+            <ul id="tasks">
+                <li>
+                    <input type="button" class="done" onclick="markDone(this.parentNode)" value="&#x2713;" />
+                    <input type="button" class="remove" onclick="remove(this.parentNode)" value="&#x2715;" />
+                    Make a to do list
+                </li>
+            </ul>
+
+            <hr>
+
+            <div id="divabout"></div>
+
+            <button btn="button" type="submit" onclick="doAbout()">About</button>
+
+            <button btn="button" type="clear" onclick="clearAbout()">Clear</button>
+
+        </main>
+    </body>
+    <script src="main.js"></script>
+</html>
